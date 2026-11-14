@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+<defs>
+  <linearGradient id="tile" x1="18" y1="12" x2="108" y2="118" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#174b82" stop-opacity=".98"/>
+    <stop offset=".48" stop-color="#0b2d56" stop-opacity=".96"/>
+    <stop offset="1" stop-color="#06172f"/>
+  </linearGradient>
+  <linearGradient id="tileEdge" x1="19" y1="16" x2="111" y2="112" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#9bcfff" stop-opacity=".78"/>
+    <stop offset=".5" stop-color="#4f8fca" stop-opacity=".34"/>
+    <stop offset="1" stop-color="#9bcfff" stop-opacity=".18"/>
+  </linearGradient>
+  <linearGradient id="vGlass" x1="35" y1="29" x2="92" y2="103" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#e1f3ff" stop-opacity=".96"/>
+    <stop offset=".34" stop-color="#80bdf0" stop-opacity=".94"/>
+    <stop offset=".72" stop-color="#367bb9" stop-opacity=".96"/>
+    <stop offset="1" stop-color="#174a7c"/>
+  </linearGradient>
+  <linearGradient id="shine" x1="30" y1="15" x2="88" y2="83" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#fff" stop-opacity=".28"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(54 52 -48 50 35 25)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#7bbcff" stop-opacity=".28"/>
+    <stop offset="1" stop-color="#7bbcff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+    <feOffset dy="4"/>
+    <feComponentTransfer><feFuncA type="linear" slope=".3"/></feComponentTransfer>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect x="8" y="8" width="112" height="112" rx="34" fill="#06152b"/>
+<rect x="8.75" y="8.75" width="110.5" height="110.5" rx="33.25" fill="url(#tile)" stroke="url(#tileEdge)" stroke-width="1.5"/>
+<rect x="10" y="10" width="108" height="108" rx="32" fill="url(#glow)"/>
+<path d="M25 20.5C38 12.5 63 12 83 18" stroke="#d7edff" stroke-opacity=".34" stroke-width="2" stroke-linecap="round"/>
+<path d="M30.5 34.5C29.3 31.6 31.4 28.6 34.5 28.6H39.2C41.1 28.6 42.8 29.7 43.5 31.5L62 81.1C62.8 83.2 65.7 83.2 66.5 81.1L85 31.5C85.7 29.7 87.4 28.6 89.3 28.6H94C97.1 28.6 99.2 31.6 98 34.5L72.3 96.1C69.4 103 59.6 103 56.7 96.1L30.5 34.5Z" fill="url(#vGlass)" stroke="#c5e5ff" stroke-opacity=".64" stroke-width="1.5" filter="url(#shadow)"/>
+<path d="M37 34.5 61.8 94.1C62.5 95.8 64.9 95.8 65.6 94.1L90.7 34.5" stroke="#f3f9ff" stroke-opacity=".48" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M16 48C17 32 29 19 45 15" stroke="#d9eeff" stroke-opacity=".16" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,18 @@
+{
+  "name": "VESPERA — Liquid Glass",
+  "short_name": "VESPERA",
+  "description": "A calm personal system with a refined liquid-glass interface.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#071326",
+  "theme_color": "#071326",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
